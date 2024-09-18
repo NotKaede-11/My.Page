@@ -64,18 +64,37 @@ animation: fadeIn 2s ease-in-out;
 }
 
 nav ul {
-list-style-type: none;
-padding: 0;
-margin: 0;
-display: flex;
-justify-content: flex-end;
-max-width: 1200px;
-margin: 0 auto;
-padding: 0 20px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-nav li {
-margin-left: 30px;
+nav li.brand {
+  margin-right: auto;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+nav li.brand .my {
+  color: #6b5b95;
+}
+
+nav li.brand .dot {
+  color: #ff6f61;
+}
+
+nav li.brand .page {
+  color: #ff6f61;
+}
+
+nav li:not(.brand) {
+  margin-left: 30px;
 }
 
 nav a {
@@ -122,6 +141,18 @@ nav ul {
 nav li {
   margin: 0 15px;
 }
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px; 
+  color: #6b5b95; 
+  letter-spacing: 1px;
+  
+}
+
+.logo .dot {
+  color: #ff6f61; 
 }
 
 .full-screen-section {
@@ -192,6 +223,7 @@ nav li {
   margin-left: 50px;
   object-fit: cover;
   transition: transform 0.3s ease, border-radius 0.3s ease;
+  margin-right: 100px;
 }
 
 .name-card .image img:hover {
